@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="table style_table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date de creation</th>
+                <th>Etat</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Matricule</th>
+                <th style="padding-left: 150px;">Action</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+            
+            </tbody>
+        </table>
+    </div>
+
+    <div class="box_button_enregistre"><button class="get_form_Enregistre">Ajouter utilisateur</button></div>
+
+
+    
+      
+    <div class="modal_form" id="modal_form">
+        <div class="modal_form_header">
+            <div class="modal_form_title"><h1>Ajout d'utilisateur</h1></div>
+        </div>
+    <form id="myForm">
+            <div class="modal_form_body">
+                <div class="input">
+                    <label>ID</label>
+                    <input type="text" name="ID"  id="ID">
+                </div>
+                <div class="input">
+                    <label>Nom</label>
+                    <input type="text" name="nom"  id="nom">
+                </div>
+                <div class="input">
+                    <label>Prenom</label>
+                    <input type="text" name="prenom"  id="prenom">
+                </div>
+                <div class="input">
+                    <label>Etat</label>
+                    <select name="etat" id="etat">
+                        <option value="En validation">En validation</option>
+                        <option value="Validé">Validé</option>
+                        <option value="Rejeté">Rejeté</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" name="nom_user" id="nom_user">
+                </div>
+                <div class="input">
+                    <label>Date de creation</label>
+                    <input type="datetime-local" name="date_creation"  id="date_creation">
+                </div>
+                <div class="input">
+                    <label>Matricule</label>
+                    <input type="text" name="Matricule" id="Matricule">
+                </div>
+            </div>
+            <div class="submit_button_enregistre"><button class="submit_form_Enregistre">Enreigtrer</button></div>
+        </div>
+    </form>
+    <div class="" id="overlay"></div>
+<script src="./app.js"></script>
+</body>
+</html>
